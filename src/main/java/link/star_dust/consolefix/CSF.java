@@ -31,7 +31,7 @@ public final class CSF extends JavaPlugin {
         eng = this.oldEngine ? new OldEngine(this) : new NewEngine(this);
         CommandHandler cmd = new CommandHandler(this);
         
-        int pluginId = 23790;
+        int pluginId = 24348;
         new Metrics(this, pluginId);
 
         // Debugging start
