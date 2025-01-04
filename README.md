@@ -37,35 +37,34 @@ A bukkit/spigot utility plugin that allows you to hide desired messages or error
 
 **Configuration example:**
 
-<div class="ToggleTriggerAnchor bbCodeSpoilerContainer">
-	<button type="button" class="button bbCodeSpoilerButton ToggleTrigger Tooltip JsOnly" data-target="> .SpoilerTarget"><span>Spoiler: <span class="SpoilerTitle">config.yml</span></span></button>
-	<div class="SpoilerTarget bbCodeSpoilerText" style="display: none; opacity: 0;"># default config.yml for ConsoleSpamFixReborn<br>
-# config version 1.11.0<br>
-<br>
-#Add here the messages you want to hide from your console and logs.<br>
-#Each line represents a new message.<br>
-#NOTE! You dont need to add the full message!<br>
-#The plugin will hide all messages that contain the text added below.<br>
-#  EXAMPLE:<br>
-#<br>
-#    Messages-To-Hide-Filter:<br>
-#    - 'No new version available'<br>
-#<br>
-#  All messages that will appear in the server console that contain these words 'WARNING: unlocalizedName' will be hidden and they will not appear on logs or console.<br>
-#  If you have large errors you dont have to type the full error. But the more words you add the more accurate will be and will not hide other messages that may contain the words added in the filter.<br>
-<br>
-Messages-To-Hide-Filter:<br>
-- 'First example message'<br>
-- 'Second example message'<br>
-<br>
-<br>
-#Chat messages with color and format codes support.<br>
-#Minecraft Color and Format Codes: <a href="http://minecraft.gamepedia.com/Formatting_codes" target="_blank" class="externalLink" rel="nofollow">http://minecraft.gamepedia.com/Formatting_codes</a>   <br>
-ChatMessages:<br>
-    NoPermission: '&amp;4[System] &amp;cYou don''t have permission!'<br>
-    CmdHelp: '&amp;4[System] &amp;cAvailable commands:&amp;6 /csf reload'<br>
-    CmdReload: '&amp;2[System] &amp;aConfig reload complete!'</div>
-</div>
+```yaml
+# default config.yml for ConsoleSpamFixReborn
+# config version 1.11.0
+
+#Add here the messages you want to hide from your console and logs.
+#Each line represents a new message.
+#NOTE! You dont need to add the full message!
+#The plugin will hide all messages that contain the text added below.
+#  EXAMPLE:
+#
+#    Messages-To-Hide-Filter:
+#    - 'No new version available'
+#
+#  All messages that will appear in the server console that contain these words 'WARNING: unlocalizedName' will be hidden and they will not appear on logs or console.
+#  If you have large errors you dont have to type the full error. But the more words you add the more accurate will be and will not hide other messages that may contain the words added in the filter.
+
+Messages-To-Hide-Filter:
+- 'First example message'
+- 'Second example message'
+
+
+#Chat messages with color and format codes support.
+#Minecraft Color and Format Codes: http://minecraft.gamepedia.com/Formatting_codes    
+ChatMessages:
+    NoPermission: '&4[System] &cYou don''t have permission!'
+    CmdHelp: '&4[System] &cAvailable commands:&6 /csf reload'
+    CmdReload: '&2[System] &aConfig reload complete!'
+```
 
 **Note!**
 
