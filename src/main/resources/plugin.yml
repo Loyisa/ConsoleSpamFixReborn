@@ -1,0 +1,15 @@
+name: ConsoleSpamFixReborn
+main: link.star_dust.consolefix.CSF
+version: 1.11.0
+author: CraftersLand, Author87668
+website: https://www.spigotmc.org/resources/121703/
+load: STARTUP
+description: Stop the console spam errors.
+api-version: 1.13
+commands:
+    csf:
+        description: The main command.
+permissions:
+    csf.admin:
+        description: Admin commands access.
+        default: op
