@@ -8,6 +8,7 @@ A bukkit/folia utility plugin that allows you to hide desired messages or errors
 **How to update your ConsoleSpamFix to ConsoleSpamFixReborn?**
 
 1. Download **ConsoleSpamFixReborn**.
+1. Put **ConsoleSpamFixReborn** to `plugins/` folder
 1. Rename `plugins/ConsoleSpamFix` to `plugins/ConsoleSpamFixReborn`
 2. Enjoy!
 
