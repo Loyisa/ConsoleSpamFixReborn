@@ -5,6 +5,8 @@ import org.bukkit.Bukkit;
 import org.bukkit.event.HandlerList;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import link.star_dust.consolefix.FoliaCheck;
+
 import java.util.Objects;
 import java.util.logging.Logger;
 
@@ -51,7 +53,9 @@ public final class CSF extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        Bukkit.getScheduler().cancelTasks(this);
+    	if (!FoliaCheck.isFolia()) {
+            Bukkit.getScheduler().cancelTasks(this);
+    	} 
         HandlerList.unregisterAll(this);
         log.info("Messages hidden since the server started: " + this.getEngine().getHiddenMessagesCount());
         log.info(pluginName + " is disabled!");

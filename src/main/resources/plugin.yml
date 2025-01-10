@@ -1,7 +1,8 @@
 name: ConsoleSpamFixReborn
 main: link.star_dust.consolefix.CSF
-version: 1.11.0
-author: CraftersLand, Author87668
+version: 1.11.1
+authors: [CraftersLand, Author87668]
+folia-supported: true
 website: https://www.spigotmc.org/resources/121703/
 load: STARTUP
 description: Stop the console spam errors.

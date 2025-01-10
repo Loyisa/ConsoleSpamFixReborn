@@ -1,7 +1,16 @@
 
-A bukkit/spigot utility plugin that allows you to hide desired messages or errors that appear on server console and logs. The messages or errors are only hidden and not fixed! Useful if you want to hide errors or messages that spam the server console and get huge sized server logs. This plugin was made to stop console spam when you can't have the issue fixed, to prevent other issues because of intense console spam and unreadable console logs. It's very useful on modded servers where some mods can cause a lot of console spam. This does not hide all errors! Only the ones you configure to be hidden!
+A bukkit/folia utility plugin that allows you to hide desired messages or errors that appear on server console and logs. The messages or errors are only hidden and not fixed! Useful if you want to hide errors or messages that spam the server console and get huge sized server logs. This plugin was made to stop console spam when you can't have the issue fixed, to prevent other issues because of intense console spam and unreadable console logs. It's very useful on modded servers where some mods can cause a lot of console spam. `This does not hide all errors! Only the ones you configure to be hidden!`
 
 ***Note!** On modded servers some errors my not be hidden by this plugin due the fact that mods run on forge and some console messages are sent outside the main server thread. If you have messages that this plugin can't hide please post them on the Discussion page.*
+
+
+
+**How to update your ConsoleSpamFix to ConsoleSpamFixReborn?**
+
+1. Rename `plugins/ConsoleSpamFix` to `plugins/ConsoleSpamFixReborn`
+2. Enjoy!
+
+
 
 **Do you want a powerful anti-xray?** Then check out my other plugin:
 
@@ -11,7 +20,7 @@ A bukkit/spigot utility plugin that allows you to hide desired messages or error
 
 **Features**
 
-- The plugin should work fine on any bukkit/spigot server no mater the version. It works on KCauldron modded servers too.
+- The plugin should work fine on any bukkit/spigot server no mater the version. It works on Arclight modded servers too.
 - Hides configured messages from appearing on server console and logs.
 - Easy to configure. Check the plugin config file.
 - Reload command to apply the config changes without a server restart.
@@ -61,9 +70,9 @@ Messages-To-Hide-Filter:
 #Chat messages with color and format codes support.
 #Minecraft Color and Format Codes: http://minecraft.gamepedia.com/Formatting_codes    
 ChatMessages:
-    NoPermission: '&4[System] &cYou don''t have permission!'
-    CmdHelp: '&4[System] &cAvailable commands:&6 /csf reload'
-    CmdReload: '&2[System] &aConfig reload complete!'
+    NoPermission: '[System] You don''t have permission!'
+    CmdHelp: '[System] Available commands: /csf reload'
+    CmdReload: '[System] Config reload complete!'
 ```
 
 **Note!**
